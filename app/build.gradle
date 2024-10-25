@@ -4,14 +4,14 @@ apply plugin: 'androidx.navigation.safeargs'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 32
+    compileSdk 33
 
 
     defaultConfig {
         applicationId "com.zane.smapiinstaller"
         minSdkVersion 21
+        targetSdk 35
         //noinspection ExpiredTargetSdkVersion
-        targetSdkVersion 30
         versionCode 77
         versionName "3.18.3.3"
 
@@ -57,6 +57,7 @@ android {
         viewBinding true
     }
     namespace 'com.zane.smapiinstaller'
+    buildToolsVersion '34.0.0'
 }
 
 greendao {
@@ -74,7 +75,7 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:2.5.2"
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     //noinspection GradleDynamicVersion,GradleDependency
-    implementation 'androidx.webkit:webkit:1.4.+'
+    implementation 'androidx.webkit:webkit:1.6.1'
     implementation "androidx.documentfile:documentfile:1.0.1"
     // https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on
     implementation group: 'org.bouncycastle', name: 'bcprov-jdk15on', version: '1.67'
